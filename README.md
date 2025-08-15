@@ -31,13 +31,13 @@
 ## Architecture
 
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+┌──────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   React Frontend │    │  Flask Backend  │    │   AI Services   │
-│                 │    │                 │    │                 │
-│ • Image Upload  │◄──►│ • YOLO Detection│◄──►│ • LM Studio     │
-│ • Recipe Tabs   │    │ • Recipe Gen    │    │ • Vector DB     │
-│ • Chat System   │    │ • Chat Sessions │    │ • Embeddings    │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
+│                  │    │                 │    │                 │
+│ • Image Upload   │◄──►│ • YOLO Detection│◄──►│ • LM Studio     │
+│ • Recipe Tabs    │    │ • Recipe Gen    │    │ • Vector DB     │
+│ • Chat System    │    │ • Chat Sessions │    │ • Embeddings    │
+└──────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
 ## Tech Stack
