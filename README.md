@@ -2,6 +2,7 @@
 
 > AI-powered cooking assistant that detects ingredients from images and generates personalized recipes
 
+> Click here to view [demo](https://lockman04.github.io/SavoryAI/)
 ## Features
 
 ### 🔍 Smart Ingredient Detection
