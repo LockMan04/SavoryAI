@@ -1,135 +1,62 @@
-# Food Detection & Recipe Generation App - Demo
+# Ứng Dụng Nhận Diện Thực Phẩm & Tạo Công Thức Nấu Ăn
 
-> AI-powered cooking assistant that detects ingredients from images and generates personalized recipes
+## Tổng quan
+Ứng dụng AI thông minh giúp nhận diện nguyên liệu từ hình ảnh và tự động tạo ra các công thức nấu ăn phù hợp, hỗ trợ người dùng tận dụng tối đa thực phẩm có sẵn.
 
-> Click here to view [demo](https://lockman04.github.io/SavoryAI/)
-## Features
+## Tính năng chính
 
-### 🔍 Smart Ingredient Detection
-- **YOLO AI Detection**: Upload photos to automatically identify ingredients
-- **Multi-language Support**: English detection with Vietnamese translation
-- **Manual Editing**: Fine-tune detected ingredients list
-- **Batch Upload**: Process multiple images at once
+### Nhận diện nguyên liệu thông minh
+- **AI YOLO Detection**: Tải ảnh lên để tự động nhận diện nguyên liệu
+- **Chỉnh sửa thủ công**: Điều chỉnh danh sách nguyên liệu đã phát hiện
 
-### Intelligent Recipe Generation
-- **3 Recipe Options**: Generate 3 different recipes from same ingredients
-- **Vector Database**: Enhanced with similar recipe context
-- **Detailed Instructions**: Step-by-step cooking guidance
-- **Nutritional Info**: Cooking time, servings, and difficulty level
+### Tạo công thức thông minh
+- **3 lựa chọn công thức**: Tạo 3 công thức khác nhau từ cùng nguyên liệu
+- **Hướng dẫn chi tiết**: Từng bước nấu ăn cụ thể
+- **Thông tin dinh dưỡng**: Thời gian nấu, khẩu phần, độ khó
 
-### Interactive Chat Assistant
-- **Context-Aware**: Chat knows which recipe you're viewing
-- **Recipe-Specific Sessions**: Separate conversations for each dish
-- **Real-time Streaming**: Live response generation
-- **Quick Questions**: Pre-defined cooking tips and FAQs
+### Trợ lý chat tương tác
+- **Nhận biết ngữ cảnh**: Chat hiểu công thức đang xem
+- **Hội thoại riêng**: Cuộc trò chuyện riêng cho từng món ăn
+- **Câu hỏi nhanh**: Mẹo nấu ăn và FAQ có sẵn
 
-### Enhanced User Experience
-- **Responsive Design**: Works on desktop, tablet, and mobile
-- **Recipe Tabs**: Easy switching between multiple recipes
-- **Cooking Tips**: Random tips with falling food icons animation
-- **Loading Animations**: Smooth progress indicators
+## Công nghệ sử dụng
 
-## Architecture
+**Frontend**: React 18+, CSS Animation, Responsive Design
+**Backend**: Flask Python, YOLOv11x, Vector Database
+**AI/ML**: LM Studio (LLM), ChromaDB, Sentence Transformers
+
+## Kiến trúc hệ thống
 
 ```
-┌──────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   React Frontend │    │  Flask Backend  │    │   AI Services   │
-│                  │    │                 │    │                 │
-│ • Image Upload   │◄──►│ • YOLO Detection│◄──►│ • LM Studio     │
-│ • Recipe Tabs    │    │ • Recipe Gen    │    │ • Vector DB     │
-│ • Chat System    │    │ • Chat Sessions │    │ • Embeddings    │
-└──────────────────┘    └─────────────────┘    └─────────────────┘
+React Frontend ↔ Flask Backend ↔ AI Services
+     ↓               ↓              ↓
+• Upload ảnh     • YOLO Detection  • LM Studio
+• Recipe Tabs    • Tạo công thức   • Vector DB
+• Chat System    • Chat Sessions   • Embeddings
 ```
 
-## Tech Stack
+## Ứng dụng thực tế
 
-**Frontend**
-- React 18+ with Hooks
-- Pure CSS with advanced animations
-- Lucide React icons
-- Responsive design
+✅ **Người nấu ăn tại nhà**: Biến nguyên liệu ngẫu nhiên thành bữa ăn hoàn chỉnh
+✅ **Người yêu ẩm thực**: Khám phá phong cách nấu ăn đa dạng
+✅ **Lập kế hoạch bữa ăn**: Sử dụng hiệu quả thức ăn thừa, giảm lãng phí
 
-**Backend** 
-- Flask Python API
-- YOLO v8/v9 for detection
-- ChromaDB vector database
-- Session management
+## Hiệu suất
 
-**AI & ML**
-- Local LLM via LM Studio
-- Sentence Transformers for embeddings
-- Custom trained YOLO model
-- Vector similarity search
+- **Độ chính xác nhận diện**: 85%+
+- **Thời gian phản hồi**: <3s cho việc tạo công thức
+- **Tính khả dụng**: Mục tiêu 99%+ uptime
 
-## Screenshots
+## Website demo
 
-### Main Interface
-![Main Interface](./screenshots/main-interface.png)
-![Reponsive](./screenshots/responsive-design.png)
+- [Let me cook](https://lockman04.github.io/SavoryAI/)
 
-### Ingredient Detection  
-![Detection](./screenshots/detection-process.png)
+## Phát triển tương lai
 
-### Cooking Tips
-![Tips](./screenshots/cooking-tips.png)
+**Tính năng mới**: Chế độ ăn đặc biệt, phong cách ẩm thực, danh sách mua sắm
 
-### Recipe Generation
-![Recipes](./screenshots/multiple-recipes.png)
-
-### Chat Assistant
-![Chat](./screenshots/chat-system.png)
-
-## Use Cases
-
-### For Home Cooks
-- Turn random ingredients into complete meals
-- Get cooking advice from AI assistant
-- Learn new recipes from available ingredients
-
-### For Food Enthusiasts  
-- Explore diverse cooking styles
-- Understand ingredient combinations
-- Improve cooking skills with tips
-
-### For Meal Planning
-- Use leftovers efficiently
-- Plan meals based on available ingredients
-- Reduce food waste
-
-## Future Enhancements
-
-### Planned Features
-- [ ] **Dietary Restrictions**: Vegetarian, vegan, gluten-free options
-- [ ] **Cuisine Styles**: Specific cuisine preferences (Asian, Italian, etc.)
-- [ ] **Shopping Lists**: Generate ingredient shopping lists
-- [ ] **Recipe Rating**: User feedback and recipe improvements
-- [ ] **Social Sharing**: Share recipes with friends
-- [ ] **Offline Mode**: Local recipe storage and offline access
-
-### Technical Improvements
-- [ ] **Performance**: Model optimization and caching
-- [ ] **Scalability**: Docker containerization
-- [ ] **Security**: Enhanced authentication and authorization
-- [ ] **Testing**: Comprehensive unit and integration tests
-- [ ] **Analytics**: Usage statistics and user behavior insights
-
-## Performance Metrics
-
-- **Detection Accuracy**: 85%+ ingredient recognition
-- **Response Time**: <3s for recipe generation
-- **User Satisfaction**: Based on recipe quality and relevance
-- **System Uptime**: 99%+ availability target
-
-## Contributing
-
-This is a demo showcase of our food detection application. For the full development version and contribution guidelines, please contact the development team.
-
-## License
-
-This demo is for showcase purposes. Full application licensing terms apply to the complete version.
+**Cải tiến kỹ thuật**: Tối ưu hóa hiệu suất, Docker, bảo mật nâng cao
 
 ---
 
-**🍳 Made with ❤️ by Vietnamese Developers**
-
-*Last updated: August 2025*
+**Made with ❤️ by student of Nguyen Tat Thanh University**

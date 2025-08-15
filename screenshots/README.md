@@ -1,45 +1,45 @@
-# Screenshots Placeholder
+# Thư mục Ảnh Chụp Màn Hình
 
-This folder contains screenshots showcasing the application features.
+Thư mục này chứa các ảnh chụp màn hình minh họa cho các tính năng của ứng dụng.
 
-## Required Screenshots
+## Các ảnh chụp cần thiết
 
 ### main-interface.png
-- Overall application layout
-- Left panel with upload area
-- Right panel with recipe display
-- Clean, modern UI design
+- Giao diện tổng thể của ứng dụng  
+- Bảng bên trái với khu vực tải ảnh  
+- Bảng bên phải hiển thị công thức nấu ăn  
+- Thiết kế giao diện hiện đại, sạch sẽ
 
 ### detection-process.png  
-- Image upload interface
-- YOLO detection in progress
-- Detected ingredients list
-- Edit functionality
+- Giao diện tải ảnh lên  
+- Quá trình YOLO đang phát hiện nguyên liệu  
+- Danh sách nguyên liệu đã nhận diện  
+- Chức năng chỉnh sửa nguyên liệu
 
 ### multiple-recipes.png
-- Recipe tabs interface
-- 3 different recipe options
-- Detailed cooking instructions
-- Context enhancement indicator
+- Giao diện hiển thị các tab món ăn  
+- 3 công thức khác nhau được đề xuất  
+- Hướng dẫn nấu ăn chi tiết  
+- Chỉ báo tăng cường ngữ cảnh
 
 ### chat-system.png
-- Chat interface
-- Real-time streaming responses
-- Quick question suggestions
-- Session management
+- Giao diện chatbot  
+- Phản hồi theo thời gian thực  
+- Gợi ý câu hỏi nhanh  
+- Quản lý phiên trò chuyện
 
 ### cooking-tips.png
-- Random tips display
-- Falling food icons animation
-- Progress indicators
-- Loading states
+- Hiển thị mẹo nấu ăn ngẫu nhiên  
+- Hiệu ứng hoạt hình các biểu tượng thực phẩm rơi  
+- Thanh tiến trình  
+- Trạng thái đang tải
 
 ### responsive-design.png
-- Mobile interface
-- Tablet layout
-- Desktop optimization
-- Cross-platform compatibility
+- Giao diện trên thiết bị di động  
+- Bố cục tối ưu cho máy tính bảng  
+- Tối ưu hóa cho màn hình desktop  
+- Tương thích đa nền tảng
 
 ---
 
-*Screenshots will be generated from the actual running application*
+*Ảnh chụp màn hình được tạo từ ứng dụng đang chạy thực tế*
